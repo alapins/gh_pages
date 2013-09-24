@@ -1,0 +1,234 @@
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    body {
+      background-position: center;
+      background-image: url(http://salcincotta.com/wp-content/themes/sal_cincotta/backgrounds/salbg6.jpg);
+      background-image: url(http://salcincotta.com/wp-content/themes/sal_cincotta/backgrounds/SalBg5.jpg);
+      background-color: black;
+      background-position: top center;
+      background-repeat: no-repeat; 
+   }
+    /* Reset the container */
+    .container {
+      max-width: none !important;
+      width: 930px;
+    }
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      padding-top: 100px;
+      padding-bottom: 0px;
+      margin-top: 0px;
+      margin-bottom: 0px; 
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    .navbar-wrapper .navbar {
+      background-color: black;
+    }
+
+    .navbar-inverse {
+      background-color: black;
+      padding-bottom: 0px;
+      margin-bottom: 0px; 
+    }
+
+    .container .navbar-header,
+    .container .navbar-collapse {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    /* Always float the navbar header */
+    .navbar-header {
+      float: left;
+    }
+
+    /* Undo the collapsing navbar */
+    .navbar-collapse {
+      display: block !important;
+      height: auto !important;
+      padding-bottom: 0;
+      overflow: visible !important;
+    }
+
+    .navbar-toggle {
+      display: none;
+    }
+
+    .navbar-brand {
+      color: white;
+      margin-top: -70px;
+      font-family: 'Raleway','Federo','Antic Didone';
+      font-size: 48px;
+    }
+
+    /* Always apply the floated nav */
+    .navbar-nav {
+      float: left;
+      margin: 0;
+    }
+    .navbar-nav > li {
+      float: left;
+    }
+    .navbar-nav > li > a {
+      padding: 15px;
+    }
+
+    /* Redeclare since we override the float above */
+    .navbar-nav.navbar-right {
+      float: right;
+    }
+
+    /* Undo custom dropdowns */
+    .navbar .open .dropdown-menu {
+      position: absolute;
+      float: left;
+      background-color: #fff;
+      border: 1px solid #cccccc;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-width: 0 1px 1px;
+      border-radius: 0 0 4px 4px;
+      -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+              box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    }
+    .navbar .open .dropdown-menu > li > a {
+      color: #fff;
+    }
+    .navbar .open .dropdown-menu > li > a:hover,
+    .navbar .open .dropdown-menu > li > a:focus,
+    .navbar .open .dropdown-menu > .active > a,
+    .navbar .open .dropdown-menu > .active > a:hover,
+    .navbar .open .dropdown-menu > .active > a:focus {
+      color: #fff !important;
+      background-color: #000 !important;
+    }
+    .navbar .open .dropdown-menu > .disabled > a,
+    .navbar .open .dropdown-menu > .disabled > a:hover,
+    .navbar .open .dropdown-menu > .disabled > a:focus {
+      color: #999 !important;
+      background-color: transparent !important;
+    }
+
+
+    .carousel {
+      height: 550px;
+      width: 100%;
+    }
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .col-lg-4 {
+      width:33.333333333%;
+    }
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11 {
+      float: left;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+    .col-md-5 {
+      width: 41.66666666666667%;
+    }
+    .col-md-7 {
+      width: 58.333333333333336%;
+    }
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11 {
+      float: left;
+    }
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+/*    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+*/
